@@ -1,7 +1,7 @@
 
     const fotosInicio = document.querySelector("#fotosInicio");
     const section = document.querySelectorAll("section");
-    const coches = document.querySelectorAll(".coches");
+    const coches = document.querySelectorAll(".coches > button");
     fotosInicio.style.opacity = '0';
     fotosInicio.style.transition = 'all 0.5s ease-in-out';
 
@@ -27,18 +27,12 @@ window.addEventListener('scroll', function() {
     }
 });
 
-coches.forEach((coche) => {
-    const boton = coche.querySelector('div > button');
-    if (boton) {
-      boton.addEventListener('click', () => {
-        const bgModal = coche.querySelector('.bg-modal');
-        bgModal.style.display = 'flex';
-        bgModal.style.transition = 'all 0.5s ease-in-out';
-        bgModal.style.left = '0';
+for (let i = 0; i < coches.length; i++) {
+    coches[i].addEventListener('click', () => {
+        document.querySelector('.bg-modal').style.display = 'flex';
+        document.querySelector('.bg-modal').style.transition = 'all 0.5s ease-in-out';
+        document.querySelector('.bg-modal').style.left = '0';
         alert('¡Gracias por tu compra!');
-      });
-    } else {
-      console.log('No se encontró el botón dentro del elemento .coches');
-    }
-  });
+    });
+}
 
