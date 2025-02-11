@@ -1,7 +1,7 @@
 
     const fotosInicio = document.querySelector("#fotosInicio");
     const section = document.querySelectorAll("section");
-    const coches = document.querySelectorAll(".coches > button");
+    const coches = document.querySelectorAll(".boton");
     fotosInicio.style.opacity = '0';
     fotosInicio.style.transition = 'all 0.5s ease-in-out';
 
@@ -27,12 +27,22 @@ window.addEventListener('scroll', function() {
     }
 });
 
-for (let i = 0; i < coches.length; i++) {
-    coches[i].addEventListener('click', () => {
-        document.querySelector('.bg-modal').style.display = 'flex';
-        document.querySelector('.bg-modal').style.transition = 'all 0.5s ease-in-out';
-        document.querySelector('.bg-modal').style.left = '0';
-        alert('¡Gracias por tu compra!');
+coches.forEach((coche, index) => {
+    coche.addEventListener('click', () => {
+      const modal = document.querySelectorAll('.bg-modal')[index];
+      const papi = document.querySelectorAll('.papi')[index];
+  
+      if (modal.classList.contains('animate-mostrar')) {
+        modal.classList.remove('animate-mostrar');
+        modal.classList.add('animate-ocultar');
+        papi.classList.add('animate-hidear');
+        papi.classList.remove('animate-showar');
+      } else {
+        modal.classList.remove('animate-ocultar');
+        modal.classList.add('animate-mostrar');
+        papi.classList.remove('animate-hidear');
+        papi.classList.add('animate-showar');
+      }
     });
-}
+  });
 

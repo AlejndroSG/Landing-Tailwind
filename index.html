@@ -6,6 +6,54 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&display=swap'); -->
+    <style type="text/tailwindcss">
+        @theme{
+            /* --font-display: 'Oswald', sans-serif;
+            --font-display: 'Poppins', sans-serif;
+            --font-display: 'Orbitron', sans-serif; */
+            
+            --animate-mostrar: mostrar 0.5s ease-in-out forwards;
+            @keyframes mostrar {
+                100%{
+                    left: 0%;
+                },
+                0%{
+                    left: 100%;
+                }
+            }
+            
+            --animate-ocultar: ocultar 0.5s ease-in-out forwards;
+            @keyframes ocultar {
+                0%{
+                    left: 0%;
+                },
+                100%{
+                    left: 100%;
+                }
+            }
+
+            --animate-hidear: hidear 0.5s ease-in-out forwards;
+            @keyframes hidear {
+                0%{
+                    opacity: 1;
+                },
+                100%{
+                    opacity: 0;
+                }
+            }
+
+            --animate-showar: showar 0.5s ease-in-out forwards;
+            @keyframes showar {
+                100%{
+                    opacity: 1;
+                },
+                0%{
+                    opacity: 0;
+                }
+            }
+        }
+    </style>
 </head>
 <body>
     <header class="bg-black/30 text-white fixed w-full z-999">
@@ -41,7 +89,7 @@
                 <h2 class="text-2xl font-body text-white text-center">Siempre Juntos</h2>
             </div>
         </section>
-        <section>
+        <section class="relative z-100">
             <div id="fotosInicio" class="sm:flex hidden absolute rounded-xl top-2/2 left-1/2 md:transform: -translate-x-1/2 -translate-y-1/4 z-999 bg-black/50 md:h-[200px] lg:w-2/3 w-full flex justify-between items-center md:flex-row z-999">
                 <a class="bg-[url(./fotos/1.png)] bg-cover bg-center w-1/3 h-[200px] py-5 relative group" >
                   <div class="absolute top-0 left-0 w-full h-full bg-black/40 opacity-0 group-hover:opacity-100"></div>
@@ -57,26 +105,48 @@
                 </a>
             </div>
         </section>
-        <section class="coches bg-[url(./fotos/911.jpg)] bg-cover bg-center h-screen relative -z-1 flex justify-center items-end">
-            <div class="text-white font-highlight bg-black/50 w-full flex flex-col justify-end p-10 text-center">
+        <section class="coches bg-[url(./fotos/911.jpg)] bg-cover bg-center h-screen relative z-1 flex justify-center items-end">
+            <div class="papi text-white font-highlight bg-black/50 w-full flex flex-col justify-end p-10 text-center z-500">
                 <h2 class="text-6xl">Porsche 911</h2>
                 <h3 class="text-2xl">DESDE 1994</h3>
-                <button class="bg-white text-black py-2 px-5 mt-5 font-title">Descubre Más</button>
+                <button class="boton text-center z-200 bg-white text-black py-2 px-5 mt-5 font-title">Descubre Más</button>
             </div>
-            <div class="absolute top-0 left-[-100%] w-full h-full bg-black/50 bg-modal">
-
+            <div class="absolute top-0 left-[-100%] w-full h-full bg-[url(./fotos/PorscheNuevo.jpg)] bg-cover bg-center bg-modal flex justify-center items-center text-white">
+                <div class="w-full py-5 m-auto flex flex-col items-center justify-center bg-black/50">
+                    <h2 class="text-6xl lg:w-2/3 font-title px-10 lg:px-0">Nuevo Porsche 911 GT3 R rennsport</h2>
+                    <p class="text-xl lg:w-2/3 px-10 lg:px-0 text-white mt-5">El nuevo Porsche 911 GT3 R rennsport es el último modelo de la icónica serie 911. Con su diseño aerodinámico y su potente motor, este automóvil de carreras está listo para dominar las pistas. Equipado con tecnología de vanguardia y características de alto rendimiento, el GT3 R rennsport ofrece una experiencia de conducción inigualable. ¡Descubre la emoción de la velocidad y la precisión con el nuevo Porsche 911 GT3 R rennsport!</p>
+                </div>
             </div>
         </section>
-        <section class="coches bg-[url(./fotos/Taycan.jpg)] bg-cover bg-center h-screen ">
-           
+        <section class="coches bg-[url(./fotos/Taycan.jpg)] bg-cover bg-center h-screen relative z-1 flex justify-center items-end ">
+            <div class="papi text-white font-highlight bg-black/50 w-full flex flex-col justify-end p-10 text-center z-500">
+                <h2 class="text-6xl">Taycan</h2>
+                <h3 class="text-2xl">Descubre el Futuro</h3>
+                <button class="boton text-center bg-white text-black py-2 px-5 mt-5 font-title">Descubre Más</button>
+            </div>
+            <div class="absolute top-0 left-[-100%] w-full h-full bg-[url(./fotos/TaycanTurbo.jpg)] bg-cover bg-center bg-modal flex justify-center items-center text-white">
+                <div class="w-full py-5 m-auto flex flex-col items-center justify-center bg-black/50">
+                    <h2 class="text-6xl lg:w-2/3 font-title px-10 lg:px-0">Porsche Taycan Turbo GT: la criptonita del Tesla Model S Plaid</h2>
+                    <p class="text-xl lg:w-2/3 px-10 lg:px-0 text-white mt-5">El nuevo Porsche Taycan Turbo GT es el modelo más rápido y potente de la gama Taycan. Con un motor eléctrico que produce 1.050 cv y un par motor de 1.050 Nm, este Taycan es el rival perfecto para el Tesla Model S Plaid. ¡Descubre por qué el Taycan Turbo GT es el coche eléctrico más rápido del mundo!</p>
+                </div>
+            </div>
         </section>
-        <section class="coches bg-[url(./fotos/Panamera.jpg)] bg-cover bg-center h-screen ">
-            
+        <section class="coches bg-[url(./fotos/Panamera.jpg)] bg-cover bg-center h-screen relative z-1 flex justify-center items-end ">
+            <div class="papi text-white font-highlight bg-black/50 w-full flex flex-col justify-end p-10 text-center z-500">
+                <h2 class="text-6xl">Panamera</h2>
+                <h3 class="text-2xl">DESDE 2009</h3>
+                <button class="boton text-center bg-white text-black py-2 px-5 mt-5 font-title">Descubre Más</button>
+            </div>
+            <div class="absolute top-0 left-[-100%] w-full h-full bg-[url(./fotos/PanameraDentro.jpg)] bg-cover bg-center bg-modal flex justify-center items-center text-white">
+                <div class="w-full py-5 m-auto flex flex-col items-center justify-center bg-black/50">
+                    <h2 class="text-6xl lg:w-2/3 font-title px-10 lg:px-0">Interior del Porsche Panamera</h2>
+                    <p class="text-xl lg:w-2/3 px-10 lg:px-0 text-white mt-5">El interior del Porsche Panamera combina lujo y tecnología de vanguardia. Con asientos de cuero de alta calidad y acabados elegantes, el Panamera ofrece una experiencia de conducción sofisticada y cómoda. Además, cuenta con un sistema de infoentretenimiento avanzado que incluye una pantalla táctil de alta resolución y funciones intuitivas. El diseño interior del Panamera está cuidadosamente diseñado para brindar comodidad y ergonomía, con controles fácilmente accesibles y una disposición inteligente de los elementos. Disfruta de un viaje de lujo y estilo con el Porsche Panamera.</p>
+                </div>
+            </div>
         </section>
         <script src="./js.js"></script>
     </main>
     <footer>
-
     </footer>
 </body>
 </html>
