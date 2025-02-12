@@ -2,9 +2,25 @@
     const fotosInicio = document.querySelector("#fotosInicio");
     const section = document.querySelectorAll("section");
     const coches = document.querySelectorAll(".boton");
+    const comparativaItems = document.querySelectorAll('#comparativa > div');
     fotosInicio.style.opacity = '0';
     fotosInicio.style.transition = 'all 0.5s ease-in-out';
 
+    comparativaItems.forEach(item => {
+        item.addEventListener('mouseenter', () => {
+            comparativaItems.forEach(otherItem => {
+                if (otherItem !== item) {
+                    otherItem.classList.add('filter', 'grayscale');
+                }
+            });
+        });
+    
+        item.addEventListener('mouseleave', () => {
+            comparativaItems.forEach(otherItem => {
+                otherItem.classList.remove('filter', 'grayscale');
+            });
+        });
+    });
 window.addEventListener('scroll', function() {
     var scrollPosition = window.scrollY;
     if (scrollPosition > 0) {
