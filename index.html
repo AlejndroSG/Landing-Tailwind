@@ -60,30 +60,16 @@
     </style>
 </head>
 
-<body>
-    <header class="bg-black/30 text-white fixed w-full z-999">
-        <nav class="py-5 md:px-10 flex justify-between items-center text-center">
-            <div class="w-1/3">
-                <ul class="flex gap-5 justify-center">
-                    <li><a class="font-body" href="#modelos">Modelos</a></li>
-                    <li><a class="font-body" href="">Comprar</a></li>
-                    <li><a class="font-body" href="">Servicios</a></li>
-                    <li><a class="font-body" href="">Marca</a></li>
-                </ul>
-            </div>
-            <div class="w-1/4">
+<body class="bg-black">
+    <header class="bg-black/30 text-white fixed top-0 mx-auto w-full z-999">
+        <nav class="py-5 md:px-10 flex justify-center items-center text-center">
+            <div class="md:w-1/4 w-[200px]">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4500 300">
                     <path fill="white"
                         d="M502 221c48.1 0 74-25.9 74-74V74c0-48.1-25.9-74-74-74H0v300h68v-79h434zm6-143v65c0 7.8-4.2 12-12 12H68V66h428c7.8 0 12 4.2 12 12zm228 222c-48.1 0-74-25.9-74-74V74c0-48.1 25.9-74 74-74h417c48.1 0 74 25.9 74 74v152c0 48.1-25.9 74-74 74H736zm411-66c7.8 0 12-4.2 12-12V78c0-7.8-4.2-12-12-12H742c-7.8 0-12 4.2-12 12v144c0 7.8 4.2 12 12 12h405zm675-36c39.844 16.757 67.853 56.1 68 102h-68c0-54-25-79-79-79h-361v79h-68V0h502c48.1 0 74 25.9 74 74v50.14c0 46.06-23.75 71.76-68 73.86zm-12-43c7.8 0 12-4.2 12-12V78c0-7.8-4.2-12-12-12h-428v89h428zm162-81c0-48.1 25.9-74 74-74h492v56h-486c-7.8 0-12 4.2-12 12v42c0 7.8 4.2 12 12 12h422c48.1 0 74 25.9 74 74v30c0 48.1-25.9 74-74 74h-492v-56h486c7.8 0 12-4.2 12-12v-42c0-7.8-4.2-12-12-12h-422c-48.1 0-74-25.9-74-74V74zm661 0c0-48.1 25.9-74 74-74h480v66h-474c-7.8 0-12 4.2-12 12v144c0 7.8 4.2 12 12 12h474v66h-480c-48.1 0-74-25.9-74-74V74zM3817 0v300h-68V183h-407v117h-68V0h68v117h407V0h68zm156 56v66h527v56h-527v66h527v56h-595V0h595v56h-527z">
                     </path>
                     <title>Porsche</title>
                 </svg>
-            </div>
-            <div class="w-1/3">
-                <ul class="flex gap-5 justify-center">
-                    <li><a class="font-body" href="">Proveedores</a></li>
-                    <li><a class="font-body" href="">Marca</a></li>
-                </ul>
             </div>
         </nav>
     </header>
@@ -129,9 +115,9 @@
         <section
             class="coches bg-[url(./fotos/911.jpg)] bg-cover bg-center h-screen relative z-1 flex justify-center items-end">
             <div
-                class="papi text-white font-highlight bg-black/50 w-full flex flex-col justify-end p-10 text-center z-500">
-                <h2 class="text-6xl">Porsche 911</h2>
-                <h3 class="text-2xl">DESDE 1994</h3>
+                class="papi text-white font-highlight bg-black/50 w-full flex flex-col justify-end md:p-10 p-5 text-center z-500">
+                <h2 class="md:text-6xl text-3xl">Porsche 911</h2>
+                <h3 class="md:text-2xl text-xl">DESDE 1994</h3>
                 <button
                     class="boton relative inline-flex w-[200px] mx-auto mt-3 items-center justify-center py-2.5 overflow-hidden tracking-tighter text-white bg-gray-800 rounded-md group">
                     <span
@@ -154,8 +140,8 @@
             <div
                 class="absolute top-0 left-[-100%] w-full h-full bg-[url(./fotos/PorscheNuevo.jpg)] bg-cover bg-center bg-modal flex justify-center items-center text-white">
                 <div class="w-full py-5 m-auto flex flex-col items-center justify-center bg-black/50">
-                    <h2 class="text-6xl lg:w-2/3 font-title px-10 lg:px-0">Nuevo Porsche 911 GT3 R rennsport</h2>
-                    <p class="text-xl lg:w-2/3 px-10 lg:px-0 text-white mt-5">El nuevo Porsche 911 GT3 R rennsport es el
+                    <h2 class="md:text-6xl text-4xl lg:w-2/3 font-title px-10 lg:px-0">Nuevo Porsche 911 GT3 R rennsport</h2>
+                    <p class="md:text-xl text-lg lg:w-2/3 px-10 lg:px-0 text-white mt-5">El nuevo Porsche 911 GT3 R rennsport es el
                         último modelo de la icónica serie 911. Con su diseño aerodinámico y su potente motor, este
                         automóvil de carreras está listo para dominar las pistas. Equipado con tecnología de vanguardia
                         y características de alto rendimiento, el GT3 R rennsport ofrece una experiencia de conducción
@@ -167,9 +153,9 @@
         <section
             class="coches bg-[url(./fotos/Taycan.jpg)] bg-cover bg-center h-screen relative z-1 flex justify-center items-end ">
             <div
-                class="papi text-white font-highlight bg-black/50 w-full flex flex-col justify-end p-10 text-center z-500">
-                <h2 class="text-6xl">Taycan</h2>
-                <h3 class="text-2xl">Descubre el Futuro</h3>
+                class="papi text-white font-highlight bg-black/50 w-full flex flex-col justify-end md:p-10 p-5 text-center z-500">
+                <h2 class="md:text-6xl text-3xl">Taycan</h2>
+                <h3 class="md:text-2xl text-xl">Descubre el Futuro</h3>
                 <button
                     class="boton relative inline-flex w-[200px] mx-auto mt-3 items-center justify-center py-2.5 overflow-hidden tracking-tighter text-white bg-gray-800 rounded-md group">
                     <span
@@ -192,9 +178,9 @@
             <div
                 class="absolute top-0 left-[-100%] w-full h-full bg-[url(./fotos/TaycanTurbo.jpg)] bg-cover bg-center bg-modal flex justify-center items-center text-white">
                 <div class="w-full py-5 m-auto flex flex-col items-center justify-center bg-black/50">
-                    <h2 class="text-6xl lg:w-2/3 font-title px-10 lg:px-0">Porsche Taycan Turbo GT: la criptonita del
+                    <h2 class="md:text-6xl text-4xl lg:w-2/3 font-title px-10 lg:px-0">Porsche Taycan Turbo GT: la criptonita del
                         Tesla Model S Plaid</h2>
-                    <p class="text-xl lg:w-2/3 px-10 lg:px-0 text-white mt-5">El nuevo Porsche Taycan Turbo GT es el
+                    <p class="md:text-xl text-lg lg:w-2/3 px-10 lg:px-0 text-white mt-5">El nuevo Porsche Taycan Turbo GT es el
                         modelo más rápido y potente de la gama Taycan. Con un motor eléctrico que produce 1.050 cv y un
                         par motor de 1.050 Nm, este Taycan es el rival perfecto para el Tesla Model S Plaid. ¡Descubre
                         por qué el Taycan Turbo GT es el coche eléctrico más rápido del mundo!</p>
@@ -204,9 +190,9 @@
         <section
             class="coches bg-[url(./fotos/Panamera.jpg)] bg-cover bg-center h-screen relative z-1 flex justify-center items-end ">
             <div
-                class="papi text-white font-highlight bg-black/50 w-full flex flex-col justify-end p-10 text-center z-500">
-                <h2 class="text-6xl">Panamera</h2>
-                <h3 class="text-2xl">DESDE 2009</h3>
+                class="papi text-white font-highlight bg-black/50 w-full flex flex-col justify-end md:p-10 p-5 text-center z-500">
+                <h2 class="md:text-6xl text-3xl">Panamera</h2>
+                <h3 class="md:text-2xl text-xl">DESDE 2009</h3>
                 <button
                     class="boton relative inline-flex w-[200px] mx-auto mt-3 items-center justify-center py-2.5 overflow-hidden tracking-tighter text-white bg-gray-800 rounded-md group">
                     <span
@@ -229,14 +215,13 @@
             <div
                 class="absolute top-0 left-[-100%] w-full h-full bg-[url(./fotos/PanameraDentro.jpg)] bg-cover bg-center bg-modal flex justify-center items-center text-white">
                 <div class="w-full py-5 m-auto flex flex-col items-center justify-center bg-black/50">
-                    <h2 class="text-6xl lg:w-2/3 font-title px-10 lg:px-0">Interior del Porsche Panamera</h2>
-                    <p class="text-xl lg:w-2/3 px-10 lg:px-0 text-white mt-5">El interior del Porsche Panamera combina
+                    <h2 class="md:text-6xl text-4xl lg:w-2/3 font-title px-10 lg:px-0">Interior del Porsche Panamera</h2>
+                    <p class="md:text-xl text-lg lg:w-2/3 px-10 lg:px-0 text-white mt-5">El interior del Porsche Panamera combina
                         lujo y tecnología de vanguardia. Con asientos de cuero de alta calidad y acabados elegantes, el
                         Panamera ofrece una experiencia de conducción sofisticada y cómoda. Además, cuenta con un
                         sistema de infoentretenimiento avanzado que incluye una pantalla táctil de alta resolución y
                         funciones intuitivas. El diseño interior del Panamera está cuidadosamente diseñado para brindar
-                        comodidad y ergonomía, con controles fácilmente accesibles y una disposición inteligente de los
-                        elementos. Disfruta de un viaje de lujo y estilo con el Porsche Panamera.</p>
+                        comodidad y ergonomía.</p>
                 </div>
             </div>
         </section>
@@ -304,13 +289,13 @@
                 </div>
             </div>
         </section>
-        <section class="bg-gray-100 py-10 md:py-20 text-center md:text-left text-black font-body">
-            <h1 class="text-4xl font-title mb-5">Descubre nuestros modelos</h1>
-            <div class="max-w-container-desktop mx-auto grid grid-cols-12 gap-4 py-4">
-                <div class="col-span-12 md:col-span-4 flex flex-col gap-4">
-                    <button class="relative group overflow-hidden rounded-lg col-span-12 md:col-span-4">
+        <!-- <section class="bg-[url(./fotos/fondoModelos.jpg)] bg-center bg-cover bg-fixed md:h-screen h-auto py-10 md:py-20 text-center md:text-left text-black font-body">
+            <h1 class="text-4xl font-title mb-5 text-center">Descubre nuestros modelos</h1>
+            <div class="container mx-auto grid grid-cols-12 gap-4 py-4 text-center flex justify-center flex-col">
+                <div class="col-span-6 flex flex-col gap-4 mx-auto">
+                    <button class="mx-auto relative group overflow-hidden rounded-lg col-span-3">
                         <video
-                            class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                            class="h-full/2 w-full/2 object-cover transition-transform duration-300 group-hover:scale-105"
                             loop autoplay playsinline muted>
                             <source
                                 src="./videos/911.mp4"
@@ -319,15 +304,15 @@
                         <div
                             class="absolute inset-0 bg-primary-4 opacity-50 transition-opacity duration-300 group-hover:opacity-0">
                         </div>
-                        <img src="https://cdn.openai.com/sora-ga/feed-posters/6_20241112_0416_Googly-Eyed%20Jellyfish%20Encounter_remix_01jcg4vh70ek6s3f6dat5aephr.jpg?w=640&q=50&fm=webp"
+                        <img src="./fotos/911img.jpg"
                             alt="Googly-Eyed Jellyfish Encounter"
                             class="absolute inset-0 object-cover opacity-100 transition-opacity duration-300 group-hover:opacity-0">
                     </button>
                 </div>
-                <div class="col-span-12 md:col-span-4 flex flex-col gap-4 transform origin-center transition-transform duration-300">
-                    <button class="relative group overflow-hidden rounded-lg col-span-12 md:col-span-4">
+                <div class="col-span-12 flex flex-col gap-4 mx-auto">
+                    <button class="relative group overflow-hidden rounded-lg col-span-3">
                         <video
-                            class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                            class="h-full/2 w-full/2 object-cover transition-transform duration-300 group-hover:scale-105"
                             loop autoplay playsinline muted>
                             <source
                                 src="./videos/panamera.mp4"
@@ -336,13 +321,13 @@
                         <div
                             class="absolute inset-0 bg-primary-4 opacity-50 transition-opacity duration-300 group-hover:opacity-0">
                         </div>
-                        <img src="https://cdn.openai.com/sora-ga/feed-posters/20241207_0406_Retro%20Futuristic%20Skies_simple_compose_01jegg67jtf8p8jf9m67ejzcdn.jpg?w=640&q=50&fm=webp"
+                        <img src="./fotos/taycan3d.jpg"
                             alt="Retro Futuristic Skies"
                             class="absolute inset-0 object-cover opacity-100 transition-opacity duration-300 group-hover:opacity-0">
                     </button>
                 </div>
-                <div class="col-span-12 md:col-span-4 flex flex-col gap-4">
-                    <button class="relative group overflow-hidden rounded-lg col-span-12 md:col-span-4">
+                <div class="col-span-12 flex flex-col gap-4">
+                    <button class="relative group overflow-hidden rounded-lg col-span-12">
                         <video
                             class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
                             loop autoplay playsinline muted>
@@ -359,35 +344,127 @@
                     </button>
                 </div>
             </div>
-        </section>
+        </section> -->
         <section id="galeria" class="py-10 bg-gray-100">
             <div class="container mx-auto text-center">
                 <h2 class="text-4xl font-title mb-5">Galería</h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
-                    <img src="./fotos/911.jpg" alt="Porsche 911" class="w-full h-auto rounded-lg shadow-lg">
-                    <img src="./fotos/Taycan.jpg" alt="Porsche Taycan" class="w-full h-auto rounded-lg shadow-lg">
-                    <img src="./fotos/Panamera.jpg" alt="Porsche Panamera" class="w-full h-auto rounded-lg shadow-lg">
+                
+                <div class="grid grid-cols-3 gap-5 gap-y-8">
+                    <!-- Primera fila (3 imágenes) -->
+                    <div class="relative group md:col-span-1 col-span-3">
+                        <img src="./fotos/911.jpg" alt="Porsche 911" class="w-full h-auto rounded-lg shadow-lg transition duration-300 group-hover:brightness-75">
+                        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                            <span class="text-white text-4xl font-bold">Porsche 911</span>
+                        </div>
+                    </div>
+                    
+                    <div class="relative group md:col-span-1 col-span-3">
+                        <img src="./fotos/Taycan.jpg" alt="Porsche Taycan" class="w-full h-auto rounded-lg shadow-lg transition duration-300 group-hover:brightness-75">
+                        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                            <span class="text-white text-4xl font-bold">Porsche Taycan</span>
+                        </div>
+                    </div>
+                    
+                    <div class="relative group md:col-span-1 col-span-3">
+                        <img src="./fotos/Panamera.jpg" alt="Porsche Panamera" class="w-full h-auto rounded-lg shadow-lg transition duration-300 group-hover:brightness-75">
+                        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                            <span class="text-white text-4xl font-bold">Porsche Panamera</span>
+                        </div>
+                    </div>
+        
+                    <!-- Segunda fila (1 imagen ocupando toda la fila) -->
+                    <div class="relative group col-span-3">
+                        <img src="./fotos/cayene.jpg" alt="Porsche Cayenne" class="w-full h-auto rounded-lg shadow-lg transition duration-300 group-hover:brightness-75">
+                        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                            <span class="text-white text-4xl font-bold">Porsche Cayenne</span>
+                        </div>
+                    </div>
+        
+                    <!-- Tercera fila (2 imágenes) -->
+                    <div class="relative group md:col-span-2 col-span-3">
+                        <img src="./fotos/macan.jpg" alt="Porsche Macan" class="w-full h-auto rounded-lg shadow-lg transition duration-300 group-hover:brightness-75">
+                        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                            <span class="text-white text-4xl font-bold">Porsche Macan</span>
+                        </div>
+                    </div>
+                    
+                    <div class="relative group md:col-span-1 col-span-3 sm:block hidden">
+                        <img src="./fotos/718.jpg" alt="Porsche 718" class="w-full h-auto rounded-lg shadow-lg transition duration-300 group-hover:brightness-75">
+                        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                            <span class="text-white text-4xl font-bold">Porsche 718</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
-        <section id="faq" class="py-10">
+        </section>                 
+        <section id="faq" class="py-10 bg-gray-100">
             <div class="container mx-auto text-center">
-                <h2 class="text-4xl font-title mb-5">Preguntas Frecuentes</h2>
+                <h2 class="text-4xl font-title mb-8 text-gray-800">Preguntas Frecuentes</h2>
                 <div class="flex flex-col items-center">
-                    <details class="w-full md:w-1/2 mb-3">
-                        <summary class="cursor-pointer text-lg font-body">¿Cuál es la garantía de un Porsche?</summary>
-                        <p class="text-gray-600">La garantía estándar es de 4 años o 50,000 km, lo que ocurra primero.
+        
+                    <!-- Pregunta 1 -->
+                    <details class="w-full md:w-2/3 bg-white shadow-md rounded-lg p-4 mb-4 transition duration-300">
+                        <summary class="cursor-pointer text-lg font-semibold text-gray-700 flex justify-between items-center">
+                            ¿Cuál es la garantía de un Porsche?
+                            <span class="transition-transform duration-300 rotate-90 open:rotate-0">➜</span>
+                        </summary>
+                        <p class="text-gray-600 mt-2">
+                            Todos los vehículos Porsche cuentan con una garantía estándar de <strong>4 años o 50,000 km</strong>, lo que ocurra primero. 
+                            Además, puedes optar por una extensión de garantía con cobertura adicional.
                         </p>
                     </details>
-                    <details class="w-full md:w-1/2 mb-3">
-                        <summary class="cursor-pointer text-lg font-body">¿Qué tipo de mantenimiento requiere un
-                            Porsche?</summary>
-                        <p class="text-gray-600">Se recomienda un mantenimiento regular cada 10,000 km o una vez al año.
+        
+                    <!-- Pregunta 2 -->
+                    <details class="w-full md:w-2/3 bg-white shadow-md rounded-lg p-4 mb-4 transition duration-300">
+                        <summary class="cursor-pointer text-lg font-semibold text-gray-700 flex justify-between items-center">
+                            ¿Qué tipo de mantenimiento requiere un Porsche?
+                            <span class="transition-transform duration-300 rotate-90 open:rotate-0">➜</span>
+                        </summary>
+                        <p class="text-gray-600 mt-2">
+                            Se recomienda realizar un mantenimiento cada <strong>10,000 km o una vez al año</strong>, lo que ocurra primero. 
+                            Los servicios incluyen cambio de aceite, revisión de frenos, alineación y diagnóstico electrónico del sistema.
                         </p>
                     </details>
+        
+                    <!-- Pregunta 3 -->
+                    <details class="w-full md:w-2/3 bg-white shadow-md rounded-lg p-4 mb-4 transition duration-300">
+                        <summary class="cursor-pointer text-lg font-semibold text-gray-700 flex justify-between items-center">
+                            ¿Cuáles son las opciones de financiamiento disponibles?
+                            <span class="transition-transform duration-300 rotate-90 open:rotate-0">➜</span>
+                        </summary>
+                        <p class="text-gray-600 mt-2">
+                            Porsche ofrece diversas opciones de financiamiento, incluyendo **leasing, crédito automotriz y financiamiento flexible**. 
+                            Puedes personalizar el plan según tu presupuesto y necesidades, con tasas competitivas y plazos cómodos.
+                        </p>
+                    </details>
+        
+                    <!-- Pregunta 4 -->
+                    <details class="w-full md:w-2/3 bg-white shadow-md rounded-lg p-4 mb-4 transition duration-300">
+                        <summary class="cursor-pointer text-lg font-semibold text-gray-700 flex justify-between items-center">
+                            ¿Cuánto consume de combustible un Porsche?
+                            <span class="transition-transform duration-300 rotate-90 open:rotate-0">➜</span>
+                        </summary>
+                        <p class="text-gray-600 mt-2">
+                            El consumo de combustible varía según el modelo y la motorización. 
+                            Por ejemplo, el **Porsche 911 Carrera** tiene un consumo promedio de **9-11 L/100 km**, mientras que el **Porsche Taycan** (eléctrico) tiene una autonomía de hasta **450 km** por carga.
+                        </p>
+                    </details>
+        
+                    <!-- Pregunta 5 -->
+                    <details class="w-full md:w-2/3 bg-white shadow-md rounded-lg p-4 mb-4 transition duration-300">
+                        <summary class="cursor-pointer text-lg font-semibold text-gray-700 flex justify-between items-center">
+                            ¿Cómo puedo personalizar mi Porsche?
+                            <span class="transition-transform duration-300 rotate-90 open:rotate-0">➜</span>
+                        </summary>
+                        <p class="text-gray-600 mt-2">
+                            Porsche ofrece una amplia gama de opciones de personalización a través del programa **Porsche Exclusive Manufaktur**. 
+                            Puedes elegir desde colores personalizados, materiales exclusivos para el interior, llantas especiales y mejoras en el rendimiento.
+                        </p>
+                    </details>
+        
                 </div>
             </div>
-        </section>
+        </section>                    
         <section id="eventos" class="py-10 bg-gray-200">
             <div class="container mx-auto text-center">
                 <h2 class="text-4xl font-title mb-5">Próximos Eventos</h2>
@@ -446,32 +523,6 @@
             </div>
         </section>
         <script src="./js.js"></script>
-        <script>
-            document.addEventListener("DOMContentLoaded", () => {
-                const cards = document.querySelectorAll(".col-span-12.md\\:col-span-4"); // Todas las tarjetas
-                const medio = cards[2]; // Selecciona la segunda (índice 1)
-                const section = document.querySelector("section.bg-gray-100");
-
-                const handleScroll = () => {
-                    const rect = section.getBoundingClientRect();
-                    const start = window.innerHeight * 0.1; // Empieza a escalar cuando el 20% superior es visible
-                    const end = window.innerHeight * 0.9; // Termina la animación al 80%
-
-                    if (rect.top < end && rect.bottom > start) {
-                        let progress = (rect.top - start) / (end - start);
-                        progress = Math.max(0, Math.min(1, progress)); // Limita entre 0 y 1
-
-                        const scale = 1 + 0.3 * progress; // Escala de 1 a 1.3 al subir
-                        const translateY = -50 * progress; // Sube -50px al subir
-
-                        medio.style.transform = `scale(${scale}) translateY(${translateY}px)`;
-                    }
-                };
-
-                window.addEventListener("scroll", handleScroll);
-                handleScroll(); // Ejecutar al cargar la página
-            });
-        </script>
     </main>
     <footer class="bg-black text-white py-10">
         <div class="container mx-auto flex flex-wrap justify-center">
@@ -506,5 +557,4 @@
         </div>
     </footer>
 </body>
-
 </html>
